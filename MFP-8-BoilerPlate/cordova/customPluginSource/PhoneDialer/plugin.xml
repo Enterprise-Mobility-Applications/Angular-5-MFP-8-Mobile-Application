@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="PhoneDialer" version="0.0.1">
+   <name>PhoneDialer</name>
+   <js-module name="PhoneDialer" src="www/PhoneDialer.js">
+      <clobbers target="cordova.plugins.PhoneDialer" />
+   </js-module>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="PhoneDialer">
+            <param name="ios-package" value="PhoneDialer" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/PhoneDialer.m" />
+      <source-file src="src/ios/PhoneDialer.h" />
+   </platform>
+</plugin>

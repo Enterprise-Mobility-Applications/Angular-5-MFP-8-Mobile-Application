@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="DatePicker" version="1.0.0">
+   <name>DatePicker</name>
+   <js-module name="DatePicker" src="www/DatePicker.js">
+      <clobbers target="cordova.plugins.DatePicker" />
+   </js-module>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="DatePicker">
+            <param name="ios-package" value="DatePicker" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/DatePicker.m" />
+      <source-file src="src/ios/DatePicker.h" />
+      <resource-file src="src/ios/picker.done.png"/>
+   </platform>
+</plugin>

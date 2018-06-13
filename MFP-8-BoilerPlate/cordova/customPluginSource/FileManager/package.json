@@ -1,0 +1,15 @@
+{
+	"name": "FileManager",
+	"version": "1.0.0",
+	"description": "",
+	"cordova": {
+		"id": "FileManager",
+		"platforms": ["ios",
+		"android"]
+	},
+	"keywords": ["ecosystem:cordova",
+	"cordova-ios",
+	"cordova-android"],
+	"author": "Capgemini",
+	"license": "ISC"
+}

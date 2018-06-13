@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="SMSComposer" version="0.0.1">
+   <name>SMSComposer</name>
+   <js-module name="SMSComposer" src="www/SMSComposer.js">
+      <clobbers target="cordova.plugins.SMSComposer" />
+   </js-module>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="SMSComposer">
+            <param name="ios-package" value="SMSComposer" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/SMSComposer.m" />
+      <source-file src="src/ios/SMSComposer.h" />
+   </platform>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="SMSComposer">
+            <param name="android-package" value="SMSComposer.SMSComposer" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/SMSComposer.java" target-dir="src/SMSComposer/SMSComposer" />
+   </platform>
+</plugin>

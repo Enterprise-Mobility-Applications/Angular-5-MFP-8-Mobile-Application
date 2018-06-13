@@ -1,0 +1,26 @@
+android {
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project-mfp.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false;
+        disable 'MissingTranslation'
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/ASL2.0'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/NOTICE'
+    }
+    
+     dependencies {
+
+   compile "com.squareup.okhttp3:okhttp-urlconnection:3.4.1"
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+   
+}
+}

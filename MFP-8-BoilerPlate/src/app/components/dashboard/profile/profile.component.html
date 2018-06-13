@@ -1,0 +1,35 @@
+<app-header [headerOptions]='headerOptions'></app-header>
+<div class="progressBarGrayBg">
+  <div class="progressBar sixteenPc"></div>
+</div>
+<div id="headerwrap">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="">
+        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 col-centered text-left">
+          <div class="">
+            <h2 class="pageLabel marginSubHeader">{{ userName }}</h2><hr>
+
+            <h4>{{ messagesServiceLocal.personalInfoHeader }}</h4>
+            <label >{{ messagesServiceLocal.phoneNumber }}</label>{{ mobileNumber }}<button>Edit</button><br>
+            <label >{{ messagesServiceLocal.alternateNumber }}</label><button>Edit</button><br>
+            <label > {{ messagesServiceLocal.emailAddress }}</label>{{ email }}<button>Edit</button><hr>
+            <h4>{{ messagesServiceLocal.addressHeader }}</h4><hr>
+            <h4>{{ messagesServiceLocal.proofHeader }}</h4>
+            <label >{{ proofName }}</label>{{ proof }}
+            <div *ngIf="isProof ; else condition1">
+                <button class="ml-button-primary" (click)="editAadhar()" > Edit</button>
+            </div>
+            <ng-template #condition1><button class="ml-button-primary" (click)="addAadharEnrollment()" > {{ messagesServiceLocal.addButton }}</button></ng-template>
+            <div *ngIf="isProof && !isAadhar">
+                <div class="sm-primary" (click)="addAadhar()" > {{ messagesServiceLocal.addAadharButton }}</div>
+            </div><br>
+
+              <label >{{ messagesServiceLocal.profilePANNumber }}</label>{{ PANNumber }}<button>Edit</button><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

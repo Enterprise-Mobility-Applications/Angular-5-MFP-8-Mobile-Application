@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="FileManager" version="1.0.0">
+   <name>FileManager</name>
+   <js-module name="FileManager" src="www/FileManager.js">
+      <clobbers target="cordova.plugins.FileManager" />
+   </js-module>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="FileManager">
+            <param name="ios-package" value="FileManager" />
+         </feature>
+      </config-file>
+	  <source-file src="src/ios/FileManager.m" />
+      <source-file src="src/ios/FileManager.h" />
+   </platform>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="FileManager">
+            <param name="android-package" value="FileManager.FileManager" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/FileManager.java" target-dir="src/FileManager/FileManager" />
+   </platform>
+</plugin>

@@ -1,0 +1,19 @@
+{
+  "name": "SMSComposer",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "SMSComposer",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

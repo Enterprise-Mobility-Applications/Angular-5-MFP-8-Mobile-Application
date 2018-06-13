@@ -1,0 +1,15 @@
+{
+  "name": "FileChooser",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "FileChooser",
+    "platforms": ["android"]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+	"cordova-android"
+  ],
+  "author": "Capgemini",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "PhoneDialer",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "PhoneDialer",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}

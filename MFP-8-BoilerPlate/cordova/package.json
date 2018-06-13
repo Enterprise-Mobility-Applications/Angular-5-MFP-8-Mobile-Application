@@ -1,0 +1,28 @@
+{
+  "name": "com.metlife.digitalservicing",
+  "version": "1.0.0",
+  "displayName": "DigitalServicing",
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-mfp": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-mfp-jsonstore": {}
+    }
+  },
+  "dependencies": {
+    "android-versions": "^1.2.1",
+    "cordova-android": "~6.3.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-ios": "~4.5.4",
+    "cordova-plugin-mfp": "~8.0",
+    "cordova-plugin-mfp-jsonstore": "^8.0.2017090705",
+    "cordova-plugin-splashscreen": "~3",
+    "cordova-plugin-whitelist": "~1"
+  }
+}

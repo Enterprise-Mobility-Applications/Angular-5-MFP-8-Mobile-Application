@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="FileChooser" version="1.0.0">
+   <name>FileChooser</name>
+   <js-module name="FileChooser" src="www/FileChooser.js">
+      <clobbers target="cordova.plugins.FileChooser" />
+   </js-module>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="FileChooser">
+            <param name="android-package" value="FileChooser.FileChooser" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/FileChooser.java" target-dir="src/FileChooser/FileChooser" />
+      <source-file src="src/android/FileUtils.java" target-dir="src/FileChooser/FileUtils" />
+      <source-file src="src/android/LocalStorageProvider.java" target-dir="src/FileChooser/LocalStorageProvider" />
+   </platform>
+</plugin>

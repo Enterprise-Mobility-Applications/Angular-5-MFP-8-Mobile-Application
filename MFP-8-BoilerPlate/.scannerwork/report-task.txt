@@ -1,0 +1,6 @@
+projectKey=pmli-dsp:DigitalServicingPlatform
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/pmli-dsp:DigitalServicingPlatform
+ceTaskId=AWO5qvG-vrI2omoDabTh
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWO5qvG-vrI2omoDabTh

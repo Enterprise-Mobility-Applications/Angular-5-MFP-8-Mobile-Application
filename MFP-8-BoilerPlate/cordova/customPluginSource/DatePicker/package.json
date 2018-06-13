@@ -1,0 +1,17 @@
+{
+  "name": "DatePicker",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "DatePicker",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
